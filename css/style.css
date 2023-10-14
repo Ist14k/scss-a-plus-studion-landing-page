@@ -1,0 +1,171 @@
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: sans-serif;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(10px, 120px) 600px 600px minmax(10px, 120px);
+  grid-template-rows: min-content;
+  justify-content: center;
+  margin-inline: auto;
+}
+
+.header {
+  margin: 2.5rem 0;
+}
+.header-nav {
+  grid-column: 2/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  font-size: 2.4rem;
+}
+.nav-brand span {
+  font-weight: 400;
+}
+
+.nav-items {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  color: #000000;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.nav-link:hover {
+  color: #4d4d4d;
+}
+
+.hero-content {
+  grid-column: 2/3;
+  position: relative;
+  margin-top: 13rem;
+}
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.hero-content p {
+  font-size: 1.6rem;
+  color: gray;
+  margin-bottom: 3rem;
+}
+.hero-content .content-particle-1 {
+  position: absolute;
+  bottom: 10rem;
+  right: 15rem;
+  z-index: -1;
+}
+.hero-content .content-particle-2 {
+  position: absolute;
+  bottom: 12rem;
+  left: -5rem;
+  z-index: -1;
+}
+.hero-images {
+  grid-column: 3/-1;
+  padding-bottom: 10rem;
+  position: relative;
+}
+.hero-image {
+  height: 51.2rem;
+  object-fit: cover;
+  border-radius: 0 0 0 10rem;
+}
+.hero-particle-1 {
+  position: absolute;
+  top: 0;
+  translate: -50%;
+  z-index: -1;
+}
+.hero-particle-2 {
+  position: absolute;
+  right: 12rem;
+  bottom: 0;
+  z-index: -1;
+}
+.hero-particle-3 {
+  position: absolute;
+  bottom: 4rem;
+  translate: -50%;
+  z-index: -1;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  background-color: #2639ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+@use '../abstracts/fonts';
+@use '../abstracts/colors';
+
+.header {
+  margin: 2.5rem 0;
+  &-nav {
+    grid-column: 2/4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav-brand {
+  font-size: fonts.$fs_600;
+
+  span {
+    font-weight: 400;
+  }
+}
+
+.nav-items {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-link {
+  font-size: fonts.$fs_400;
+  color: colors.$clr_primary;
+  font-weight: 600;
+  transition: color 0.2s;
+
+  &:hover {
+    color: lighten($color: #000000, $amount: 30%);
+  }
+}
