@@ -5,7 +5,7 @@
   &-content {
     grid-column: 2/3;
     position: relative;
-    margin-top: 13rem;
+    margin-top: 15rem;
 
     h1 {
       font-size: fonts.$fs_800;
@@ -27,7 +27,7 @@
 
     .content-particle-2 {
       position: absolute;
-      bottom: 12rem;
+      bottom: 10rem;
       left: -5rem;
       z-index: -1;
     }

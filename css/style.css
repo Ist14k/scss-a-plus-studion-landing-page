@@ -71,6 +71,31 @@ section {
   margin-inline: auto;
 }
 
+.btn {
+  font-size: 2rem;
+  padding: 1.5rem 3rem;
+  background-color: #2639ed;
+  color: #ffffff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.card {
+  border-radius: 3rem;
+  background-color: #fff;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  gap: 3rem;
+  text-align: center;
+}
+
 .header {
   margin: 2.5rem 0;
 }
@@ -106,7 +131,7 @@ section {
 .hero-content {
   grid-column: 2/3;
   position: relative;
-  margin-top: 13rem;
+  margin-top: 15rem;
 }
 .hero-content h1 {
   font-size: 4rem;
@@ -125,7 +150,7 @@ section {
 }
 .hero-content .content-particle-2 {
   position: absolute;
-  bottom: 12rem;
+  bottom: 10rem;
   left: -5rem;
   z-index: -1;
 }
@@ -158,14 +183,111 @@ section {
   z-index: -1;
 }
 
-.btn {
-  font-size: 2rem;
-  padding: 1.5rem 3rem;
-  background-color: #2639ed;
-  color: #ffffff;
-  border: none;
-  border-radius: 5rem;
-  cursor: pointer;
+.client-content {
+  grid-column: 2/4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 0;
+}
+.client-content .client-heading h2 {
+  font-size: 4rem;
+}
+.client-content .client-heading p {
+  font-size: 1.6rem;
+  width: 70%;
+  color: gray;
+}
+.client-content .client-brand {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.help {
+  margin: 5rem 0;
+}
+.help-container {
+  max-width: 144rem;
+  position: relative;
+}
+.help-container .help-container-shape-1 {
+  position: absolute;
+  width: 105rem;
+  right: 0;
+  top: 50%;
+  translate: 0 -50%;
+  z-index: -1;
+}
+.help-container .help-container-shape-2 {
+  position: absolute;
+  left: 14rem;
+  bottom: 5.5rem;
+  z-index: -2;
+}
+.help-container .help-container-shape-3 {
+  position: absolute;
+  left: 8rem;
+  top: 34%;
+  rotate: 180deg;
+  z-index: -2;
+}
+.help-content {
+  grid-column: 2/3;
+  align-self: center;
+}
+.help-content h2 {
+  font-size: 4rem;
+}
+.help-content p {
+  font-size: 1.6rem;
+  color: gray;
+}
+.help-cards {
+  grid-column: 3/4;
+  display: grid;
+  grid-template-columns: 31rem 31rem;
+  grid-template-rows: repeat(13, 3.5rem);
+  gap: 3rem;
+}
+.help-cards .card-icon {
+  padding: 2rem;
+  border-radius: 2rem;
+}
+.help-cards .card h3 {
+  font-size: 2.4rem;
+}
+.help-cards .card p {
+  font-size: 1.6rem;
+  color: gray;
+}
+.help-cards .card-1 {
+  grid-column: 1/2;
+  grid-row: 2/8;
+}
+.help-cards .card-1 .card-icon {
+  background-color: rgba(38, 58, 237, 0.1);
+}
+.help-cards .card-2 {
+  grid-column: 2/3;
+  grid-row: 1/7;
+}
+.help-cards .card-2 .card-icon {
+  background-color: rgba(255, 153, 0, 0.1);
+}
+.help-cards .card-3 {
+  grid-column: 1/2;
+  grid-row: 8/14;
+}
+.help-cards .card-3 .card-icon {
+  background-color: rgba(255, 0, 122, 0.1);
+}
+.help-cards .card-4 {
+  grid-column: 2/3;
+  grid-row: 7/13;
+}
+.help-cards .card-4 .card-icon {
+  background-color: rgba(0, 218, 113, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,28 @@
+.client {
+  &-content {
+    grid-column: 2/4;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0;
+
+    .client-heading {
+      h2 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.6rem;
+        width: 70%;
+        color: lighten($color: #000000, $amount: 50%);
+      }
+    }
+
+    .client-brand {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
+    }
+  }
+}
